@@ -6,7 +6,7 @@
 function isPalindrome(str) {
         let filteredStr = '';
     for (let char of str) {
-        if ((char >= 'a' && char <= 'z') || (char >= 'a' && char <= 'Z') || (char >= '0' && char <= '9')) {
+        if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || (char >= '0' && char <= '9')) {
             filteredStr += char.toLowerCase();
         }
     }
