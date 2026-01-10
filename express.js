@@ -18,6 +18,22 @@ app.get('/moviename', isOldEnough ,function(req,res){
             movie_name : "breaking bad"
         })
 })
+function isOldEnough(req,res,next){
+    let age = req.query.age;
+    if(age>14){
+        next();
+    }else{
+        res.json({
+            msg:"You are not old enough to watch this movies"
+        })
+    }
+}
+
+app.get('/watchlist', isOldEnough ,function(req,res){
+        res.json({
+           "msg":"You have watched breaking bad 2"
+        })
+})
 
 
 app.listen(3000,function(){
