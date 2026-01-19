@@ -17,6 +17,9 @@ function AddTodo(){
   }])
   
 }
+function DeleteTodo(){
+  setTodo()
+}
 
 return (
   <>
