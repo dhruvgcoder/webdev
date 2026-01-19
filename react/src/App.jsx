@@ -17,6 +17,7 @@ function AddTodo(){
   }])
   
 }
+
 return (
   <>
   <input id="title" type="text" placeholder="title"></input>
