@@ -10,3 +10,13 @@
     align-items : center;
     flex-direction : column;
 }
+
+#heading {
+    font-family : "Inter" , sans-serif ;
+}
+
+#google {
+    width : 200px;
+    border : 1px solid grey;
+    
+}
