@@ -12,15 +12,14 @@
     flex-direction : column;
 }
 #brand {
-    margin-top : 35px;
-    
+    margin-top : 25px;
     font-weight : 600;
     font-size: 18px;
 
 }
 
 #heading {
-    margin-top : 25px;
+    margin-top : -5px;
     
 }
 
@@ -35,10 +34,26 @@
     margin-top:10px;
     position : relative;
     font-size : 15px;
+    background-color : white;
+}
+#google:hover{
+    background-color: #F8F8F8;
+    border: 1px solid #D3D3D3;
 }
 #google img{
     position : absolute;
     left : 16px;
-    width : 20px;
-    height : 20px;
+    width : 25px;
+    height : 25px;
 }
+
+
+
+#form input{
+    display:block;
+    width : 350px;
+    height : 46px;
+    border-radius: 10px;
+    border : 0.2px solid #D3D3D3;
+}
+
