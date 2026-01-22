@@ -3,6 +3,7 @@
     justify-content : center;
     align-items : center;
     flex-direction : column;
+    font-family : "Inter" , sans-serif ;
 }
 #button {
     display : flex;
@@ -10,13 +11,34 @@
     align-items : center;
     flex-direction : column;
 }
+#brand {
+    margin-top : 35px;
+    
+    font-weight : 600;
+    font-size: 18px;
+
+}
 
 #heading {
-    font-family : "Inter" , sans-serif ;
+    margin-top : 25px;
+    
 }
 
 #google {
-    width : 200px;
-    border : 1px solid grey;
-    
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 350px;
+    height : 46px;
+    border : 0.2px solid #D3D3D3;
+    border-radius : 10px;
+    margin-top:10px;
+    position : relative;
+    font-size : 15px;
+}
+#google img{
+    position : absolute;
+    left : 16px;
+    width : 20px;
+    height : 20px;
 }
