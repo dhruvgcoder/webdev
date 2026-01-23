@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Grid</title>
+    </head>
+    <style>
+        .main {
+            display: grid;
+            margin : 0 auto;
+            grid-template-columns : 1fr 2fr;
+            max-width : 1200px;
+            gap : 5px;
+        }
+        .left{
+            display : grid;
+            background-color : red;
+            
+        }
+        .left h1 {
+            display : flex;
+            justify-content : center;
+            margin : 0 auto;
+        }
+        .right {
+            background-color: blue;
+        }
+        .right-content{
+            display : grid;
+            grid-template-columns : 1fr 1fr 1fr;
+        }
+
+    </style>
+    <body>
+        <div class="main">
+            <div class="left">
+                <div class="left-content">
+                    <h1>Left</h1>
+                </div>
+                    <h3>text text text text text text text text text text text text text</h3>
+               </div>
+
+            <div class="right">
+                <div class="right-content">
+                    <h1>Col 1</h1>
+                    <h1>Col 2</h1>
+                    <h1>Col 3</h1>
+                    <h1>Col 1</h1>
+                    <h1>Col 2</h1>
+                    <h1>Col 3</h1>
+                    <h1>Col 1</h1>
+                    <h1>Col 2</h1>
+                    <h1>Col 3</h1>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
