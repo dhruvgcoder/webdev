@@ -1,0 +1,26 @@
+.navbar {
+    display : flex;
+   
+}
+.brand-name{
+    display : flex;
+    padding-left : 100px;
+    background-color : green;
+    width:500px;
+}
+.brand-name img{
+    margin-top : 26px;
+    width : 30px;
+    height : 30px;
+}
+.nav-options{
+    background-color : red;
+}
+.nav-btn{
+    width: 100px;
+    height: 50px;
+}
+.right-content {
+    display: flex;
+    background-color : blue
+}
