@@ -21,7 +21,7 @@ let user1 = new Lead("dhruv",21)
 
 console.log(user1.name + " " + user1.age)
 
-isLegal(19);
+user1.isLegal();
 
 
 // Inheritance of class
