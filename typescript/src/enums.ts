@@ -33,19 +33,19 @@ enum BooleanLikeHeterogenousEnum{
 
 // Common usecase 
 
-enum ResponseStatus {
-    Success = 200 ,
-    NotFound = 404 ,
-    Error = 500
-}
+// enum ResponseStatus {
+//     Success = 200 ,
+//     NotFound = 404 ,
+//     Error = 500
+// }
 
-app.get('/',(req,res)=>{
-    if(!req.query.userId){
-        res.status(ResponseStatus.Error).json({})
-    }
-    else {
-        res.status(ResponseStatus.Success).json({
-            msg : "Welcome xyz"
-        })
-    }
-})
+// app.get('/',(req,res)=>{
+//     if(!req.query.userId){
+//         res.status(ResponseStatus.Error).json({})
+//     }
+//     else {
+//         res.status(ResponseStatus.Success).json({
+//             msg : "Welcome xyz"
+//         })
+//     }
+// })
