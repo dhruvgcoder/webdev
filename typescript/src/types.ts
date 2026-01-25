@@ -1,4 +1,4 @@
-type SumInput = string | number 
+type SumInput = string | number         // types property : Union
 
 function typeFn(a: SumInput , b: SumInput){
     return {a,b}
@@ -15,7 +15,7 @@ interface Manager {
     department : string ;
 }
 
-type TeamLead = Employee & Manager
+type TeamLead = Employee & Manager   // types property : Intersection
 
 const teamLead : TeamLead = {
     name : "dhruv",
