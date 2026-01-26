@@ -1,1 +1,1 @@
-{"root":["./src/abstract_class.ts","./src/arrays.ts","./src/class.ts","./src/enums.ts","./src/function.ts","./src/generics.ts","./src/index.ts","./src/interface.ts","./src/interface_vs_types.ts","./src/types.ts"],"version":"5.8.3"}
+{"root":["./src/abstract_class.ts","./src/advance_api.ts","./src/arrays.ts","./src/class.ts","./src/enums.ts","./src/function.ts","./src/generics.ts","./src/index.ts","./src/interface.ts","./src/interface_vs_types.ts","./src/types.ts"],"version":"5.8.3"}
