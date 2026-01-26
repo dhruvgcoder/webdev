@@ -84,8 +84,8 @@ console.log(todos.get(1));
 
 // Exclude
 
-type Event = 'click' | 'scroll' | 'mousemove';
-type ExcludeEvent = Exclude<Event, 'scroll'>; // 'click' | 'mousemove'
+type Events = 'click' | 'scroll' | 'mousemove';
+type ExcludeEvent = Exclude<Events, 'scroll'>; // 'click' | 'mousemove'
 
 const handleEvent = (event: ExcludeEvent) => {
   console.log(`Handling event: ${event}`);
