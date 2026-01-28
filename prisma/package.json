@@ -10,6 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "prisma": "^7.3.0"
   }
 }
