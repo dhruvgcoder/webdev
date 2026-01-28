@@ -52,6 +52,20 @@ app.get('/metadata', async(req,res)=>{
         address : response2.rows[0]
     })
 }) 
+app.get('/metadata-better' , async(req,res)=>{
+    const id = req.query.id 
+
+    // SQL query using JOINS
+    const query = `SELECT users.id , users.username , users.email ,
+    addresses.street , addresses.city , addresses.country , addresses.pincode
+    FROM users JOIN addresses ON users.id = addresses.user_id WHERE users.id=$1`
+
+    const response = await pgClient.query(query , [id])
+
+    res.json({
+        data : response.rows[0]
+    })
+})
 app.listen(3000,()=>{
     console.log("Server is running on PORT 3000")
 })
