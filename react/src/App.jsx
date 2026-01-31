@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PostComponent from './PostComponent'
 
+
 export default function MyApp(){
   const [todos , setTodo] = useState([{
     title : "Morning routine",
@@ -31,7 +32,6 @@ return (
     done={todo.done}/>
       )
     )}
-  <PostComponent />
   </>
 );
 }
