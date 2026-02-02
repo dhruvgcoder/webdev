@@ -1,11 +1,13 @@
 function SearchBar(){
     return (
         <form>
+            
             <input type="text" placeholder="Search..."/>
             <label>
                 <input type="checkbox"/>
-                {' '}
-                Only show product in stock
+                {' '} 
+                //js code to filter the stock 
+                Only show product in stock 
             </label>
         </form>
     );
