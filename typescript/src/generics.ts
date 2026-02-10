@@ -22,6 +22,20 @@ const x = getFirstElement<number>([11,22,33])
 console.log(el.toLowerCase())
 console.log(x)
 
+// Simple practical generic example
+function createResponse<T>(data: T) {
+    return {
+        success: true,
+        data: data
+    };
+}
 
+const userrResponse = createResponse<{ name: string; age: number }>({
+    name: "dhruv",
+    age: 25
+});
 
+const priceResponse = createResponse<number>(499);
 
+console.log(userrResponse);
+console.log(priceResponse);
