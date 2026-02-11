@@ -31,6 +31,11 @@ enum BooleanLikeHeterogenousEnum{
     Yes = "YES"
 }
 
+enum PromiseStatus {
+    pending = "Pending" ,
+    resolved = "Resolved" ,
+    rejected = "Rejected"
+}
 // Common usecase 
 
 // enum ResponseStatus {
