@@ -50,4 +50,33 @@ Promise.any([operation1(), operation2(), operation3()])
     console.log("All operations failed:", error);
   });
 
+// PROMISE.ALLSETTLED
+// Waits for ALL promises to settle and returns their results
+// Never rejects, returns array with status and value/reason for each
+
+
+function task1() {
+  return new Promise((resolve) => setTimeout(() => resolve("Task 1 done"), 1000));
+}
+
+function task2() {
+  return new Promise((reject) =>
+    setTimeout(() => reject("Task 2 error"), 1500)
+  );
+}
+
+function task3() {
+  return new Promise((resolve) => setTimeout(() => resolve("Task 3 done"), 500));
+}
+
+Promise.allSettled([task1(), task2(), task3()]).then((results) => {
+  console.log("All settled results:");
+  results.forEach((result, index) => {
+    if (result.status === "fulfilled") {
+      console.log(`  Task ${index + 1}: ✓ ${result.value}`);
+    } else {
+      console.log(`  Task ${index + 1}: ✗ ${result.reason}`);
+    }
+  });
+});
 
