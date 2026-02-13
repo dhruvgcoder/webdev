@@ -79,4 +79,41 @@ Promise.allSettled([task1(), task2(), task3()]).then((results) => {
     }
   });
 });
+//  USE CASES 
+
+// 1. Timeout Pattern with Race
+function fetchWithTimeout(url, timeout = 5000) {
+  const fetchPromise = fetch(url);
+  const timeoutPromise = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error("Request timeout")), timeout)
+  );
+
+  return Promise.race([fetchPromise, timeoutPromise]);
+}
+
+// 2. Retry with Any
+function retryOperation(operation, maxAttempts = 3) {
+  const promises = Array(maxAttempts)
+    .fill(null)
+    .map(() => operation());
+
+  return Promise.any(promises).catch(() => {
+    throw new Error(`Operation failed after ${maxAttempts} attempts`);
+  });
+}
+
+// 3. Aggregating Results with AllSettled
+async function processMultipleAPIs(urls) {
+  const promises = urls.map((url) => fetch(url).then((r) => r.json()));
+  const results = await Promise.allSettled(promises);
+
+  return results.map((result) => ({
+    success: result.status === "fulfilled",
+    data: result.value,
+    error: result.reason,
+  }));
+}
+
+console.log("Promise patterns loaded successfully!");
+
 
