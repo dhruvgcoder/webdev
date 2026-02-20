@@ -20,9 +20,3 @@ model Admin{
   phone       String?
   createdAt   DateTime  @default(now())
 }
-
-model Creator{
-  id        Int       @id @default(autoincrement())
-  name      String    
-  email     String    @unique
-}
