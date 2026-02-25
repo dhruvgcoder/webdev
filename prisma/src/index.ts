@@ -35,10 +35,7 @@ app.post("/signup", async (req, res) => {
     res.status(201).json({
       message: "User created successfully",
       user: {
-        id: user.id,
-        firstname: user.firstname,
-        lastname: user.lastname,
-        email: user.email,
+        id: user.id
       },
     });
   } catch (error: any) {
